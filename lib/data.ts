@@ -6,6 +6,12 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
+export const headerExperiencesData = [
+  "full stack development 🥞",
+  "visualization 📊",
+  "virtual reality 🥽",
+] as const;
+
 export const links = [
   {
     name: "Home",
@@ -85,23 +91,31 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
+  "CSS",
+  "HTML",
+  "Python",
+  "C++",
+  "C#",
+  "C",
+  "SQL",
+  "Bash",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "Docker",
+  "Git",
+  "Flask",
+  "RESTful API",
+  "Agile Development",
   "PostgreSQL",
-  "Python",
-  "Django",
+  "Firebase",
   "Framer Motion",
+  "Unity",
+  "Xcode",
+  "Visual Studio Code",
+  "GDB",
+  "Wireshark",
+  "Vim",
 ] as const;
