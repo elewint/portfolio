@@ -19,7 +19,7 @@ export default function ColorBarManager() {
             exit={{ opacity: 0 }}
           >
             <ColorBar
-              bar_colors={["bg-blue-400", "bg-amber-200", "bg-orange-300"]}
+              bar_colors={["bg-blue-300", "bg-amber-200", "bg-orange-300"]}
             />
           </motion.section>
         )}
@@ -34,13 +34,13 @@ export default function ColorBarManager() {
             exit={{ opacity: 0 }}
           >
             <ColorBar
-              bar_colors={["bg-violet-400", "bg-sky-300", "bg-indigo-300"]}
+              bar_colors={["bg-violet-300", "bg-sky-300", "bg-indigo-300"]}
             />
           </motion.section>
         )}
       </AnimatePresence>
       <AnimatePresence>
-        {activeSection === "Projects" && (
+        {activeSection === "Experience" && (
           <motion.section
             className="fixed -z-10"
             initial={{ opacity: 0 }}
@@ -65,6 +65,36 @@ export default function ColorBarManager() {
           >
             <ColorBar
               bar_colors={["bg-blue-300", "bg-purple-300", "bg-fuchsia-300"]}
+            />
+          </motion.section>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {activeSection === "Projects" && (
+          <motion.section
+            className="fixed -z-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+          >
+            <ColorBar
+              bar_colors={["bg-yellow-300", "bg-lime-300", "bg-orange-300"]}
+            />
+          </motion.section>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {activeSection === "Contact" && (
+          <motion.section
+            className="fixed -z-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+          >
+            <ColorBar
+              bar_colors={["bg-cyan-300", "bg-sky-300", "bg-blue-300"]}
             />
           </motion.section>
         )}

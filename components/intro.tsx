@@ -133,9 +133,9 @@ export default function Intro() {
         <span>If you are hiring, please reach out below.</span>
       </motion.h1>
 
-      <div className="flex flex-col sm:flex-row justify-center gap-2 px-4 text-lg font-medium">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
         <motion.a
-          className="group bg-slate-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:hover:bg-white/20"
+          className="min-w-[15rem] sm:min-w-auto group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:hover:bg-white/20"
           href="/Resume.pdf"
           download
           variants={fadeInVerticalVariants}
@@ -146,37 +146,15 @@ export default function Intro() {
           Download Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-0.5 transition" />
         </motion.a>
-        <motion.a
-          className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
-          href="https://www.linkedin.com/in/eintri/"
-          target="_blank"
+        <motion.div
           variants={fadeInVerticalVariants}
           initial="initial"
           animate="animate"
           custom={1}
         >
-          <BsLinkedin />
-        </motion.a>
-        <motion.a
-          className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
-          href="https://github.com/elewint"
-          variants={fadeInVerticalVariants}
-          initial="initial"
-          animate="animate"
-          custom={2}
-        >
-          <BsGithub />
-          {/* Note: can also use FaGithubSquare for a square icon */}
-        </motion.a>
-        <motion.div
-          variants={fadeInVerticalVariants}
-          initial="initial"
-          animate="animate"
-          custom={3}
-        >
           <Link
             href="#contact"
-            className="group bg-slate-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            className="min-w-[15rem] sm:min-w-0 group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -186,6 +164,30 @@ export default function Intro() {
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
         </motion.div>
+        <div className="flex mt-2 gap-4 sm:mt-0 sm:gap-2">
+          <motion.a
+            className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
+            href="https://www.linkedin.com/in/eintri/"
+            target="_blank"
+            variants={fadeInVerticalVariants}
+            initial="initial"
+            animate="animate"
+            custom={2}
+          >
+            <BsLinkedin />
+          </motion.a>
+          <motion.a
+            className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
+            href="https://github.com/elewint"
+            variants={fadeInVerticalVariants}
+            initial="initial"
+            animate="animate"
+            custom={3}
+          >
+            <BsGithub />
+            {/* Note: can also use FaGithubSquare for a square icon */}
+          </motion.a>
+        </div>
       </div>
     </section>
   );

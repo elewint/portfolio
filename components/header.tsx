@@ -124,11 +124,11 @@ export default function Header() {
                               "bg-indigo-500 dark:bg-blue-400":
                                 link.name === "About",
                             },
+                            { "bg-emerald-500": link.name === "Experience" },
+                            { "bg-purple-500": link.name === "Skills" },
                             {
-                              "bg-emerald-500": link.name === "Projects",
+                              "bg-red-500": link.name === "Projects",
                             },
-                            { "bg-blue-500": link.name === "Skills" },
-                            { "bg-blue-500": link.name === "Experience" },
                             { "bg-blue-500": link.name === "Contact" }
                           )}
                           variants={{

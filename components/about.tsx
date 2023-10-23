@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 import placeholderImg from "@/public/placeholder1.png";
-import placeholderImg2 from "@/public/placeholder2.png";
+import gradImg from "@/public/graduation.png";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.2);
@@ -21,33 +21,32 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <div className="flex gap-5">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
         <p className="mb-3">
-          I got my start in software engineering at the University of Maryland,
-          College Park, where I graduated with a B.S. in Computer Science in May
-          2021. I'm currently working as a Software Engineer at Microsoft. I
-          want this to be a longer section so I'm saying the same thing again. I
-          got my start in software engineering at the University of Maryland,
-          College Park, where I graduated with a B.S. in Computer Science in May
-          2021.
-          <p>If you want to get in touch, feel free to reach out.</p>
+          I studied software engineering at Tufts University, where I graduated
+          with a B.S. in Computer Science and Science, Technology, and Society
+          in May 2023. I'm currently working part-time as a Full-Stack Engineer
+          at Carmel Research Center, Inc.{" "}
+          <span className="font-medium">
+            If you want to work together, feel free to reach out.
+          </span>
         </p>
-        <div className="w-[20rem] flex-shrink-0">
+        <div className="w-[15rem] xs:w-[20rem] h-[25rem] flex-shrink-0">
           <Image
             src={placeholderImg}
             alt="placeholder"
             quality={95}
             width={150}
             height={150}
-            className="absolute w-[20rem] h-[20rem] rounded-t-lg shadow-xl"
+            className="absolute w-[15rem] h-[15rem] xs:w-[20rem] xs:h-[20rem] rounded-t-lg shadow-xl"
           />
           <Image
-            src={placeholderImg2}
+            src={gradImg}
             alt="placeholder 2"
             quality={95}
             width={150}
             height={150}
-            className="absolute object-cover object-right mx-[5.5rem] mt-[7.5rem] w-[17rem] h-[17rem] rounded-t-lg shadow-xl"
+            className="absolute object-cover object-right mx-[3.5rem] xs:mx-[5rem] mt-[7.5rem] w-[13rem] xs:w-[17rem] h-[13rem] xs:h-[17rem] rounded-t-lg shadow-xl"
           />
         </div>
       </div>

@@ -22,16 +22,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Contact",
@@ -41,28 +41,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Part-Time Full Stack Engineer at Carmel Research Center",
+    location: "Medford, MA",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jun 2023 - present",
+  },
+  {
+    title: "Full Stack Engineer for Tufts JumboCode",
+    location: "Medford, MA",
+    description:
+      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2021 - May 2022",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Medford, MA",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Jun 2020 - Mar 2021",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Medford, MA",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "May 2019 - Aug 2019",
   },
 ] as const;
 
