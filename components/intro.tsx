@@ -37,7 +37,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-2 mt-4 sm:mt-[20rem] max-w-[40rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mt-[15%] sm:mt-[25%] max-w-[40rem] text-center scroll-mt-[100rem]"
     >
       <div className="flex flex-col sm:flex-row items-center justify-center px-4 gap-4">
         <div className="relative shrink-0">
@@ -130,7 +130,7 @@ export default function Intro() {
             <br />
           </div>
         </span>{" "}
-        <span>If you are hiring, please reach out.</span>
+        <span>If you are hiring, please reach out below.</span>
       </motion.h1>
 
       <div className="flex flex-col sm:flex-row justify-center gap-2 px-4 text-lg font-medium">
