@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 
-export default function useWindowWidth() {
-  const [windowSize, setWindowSize] = useState({
+type WindowWidth = {
+  width: number | undefined;
+};
+
+const useWindowWidth = (): WindowWidth => {
+  const [windowWidth, setWindowWidth] = useState<WindowWidth>({
     width: undefined,
-    height: undefined,
   });
 
   useEffect(() => {
-    // only execute all the code below in client side
+    // Only execute all the code below in client side
+
     // Handler to call on window resize
     function handleResize() {
       // Set window width/height to state
-      setWindowSize({
+      setWindowWidth({
         width: window.innerWidth,
-        height: window.innerHeight,
       });
     }
 
@@ -28,5 +31,7 @@ export default function useWindowWidth() {
   }, []); // Empty array ensures that effect is only run on mount
 
   // Return the width so we can use it in our components
-  return windowSize;
-}
+  return windowWidth;
+};
+
+export default useWindowWidth;
