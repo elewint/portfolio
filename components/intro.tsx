@@ -85,7 +85,7 @@ export default function Intro() {
               }}
               className="inline-block"
             >
-              Hi, I'm Eli.
+              Hi, I&apos;m Eli.
             </motion.span>{" "}
             <motion.div
               initial={{ opacity: 0 }}
@@ -96,7 +96,7 @@ export default function Intro() {
               }}
               className="inline"
             >
-              <span className="inline-block">I'm a</span>{" "}
+              <span className="inline-block">I&apos;m a</span>{" "}
               <span className="inline">software engineer</span>{" "}
               <span className="inline">with</span>{" "}
               <span className="inline">experience in:</span>
@@ -124,7 +124,7 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.3, duration: 0.5 }}
         >
-          <span>Right now, I'm</span>{" "}
+          <span>Right now, I&apos;m</span>{" "}
           <span className="font-medium underline">
             seeking Full Stack Engineer roles.
             <div className="hidden sm:inline">

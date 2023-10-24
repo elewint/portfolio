@@ -22,8 +22,8 @@ export default function About() {
         <p className="mb-3">
           I studied software engineering at Tufts University, where I graduated
           with a B.S. in Computer Science and Science, Technology, and Society
-          in May 2023. Now I'm based in San Francisco, CA, where I work as a
-          part-time Full-Stack Engineer at Carmel Research Center, Inc. I am
+          in May 2023. Now I&apos;m based in San Francisco, CA, where I work as
+          a part-time Full-Stack Engineer at Carmel Research Center, Inc. I am
           always looking for new projects and opportunities.{" "}
           <span className="font-medium">
             If you want to work on something together, feel free to reach out!
