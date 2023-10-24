@@ -22,7 +22,7 @@ export default function ColorBar({ bar_colors }: ColorBarProps) {
           //   ease: "linear",
           // }}
           className={clsx(
-            "opacity-70 -z-11 h-[20rem] w-[40rem] rounded-[2rem] blur-[10rem] dark:bg-[#946263]",
+            "opacity-70 dark:opacity-60 -z-11 h-[20rem] w-[40rem] rounded-[2rem] blur-[10rem] dark:bg-[#946263]",
             bar_colors[1]
           )}
         ></div>
@@ -38,7 +38,7 @@ export default function ColorBar({ bar_colors }: ColorBarProps) {
           //   ease: "linear",
           // }}
           className={clsx(
-            "opacity-80 -z-10 h-[20rem] w-[35rem] rounded-[2rem] blur-[10rem] right-[50%] dark:bg-[#676394]",
+            "opacity-80 dark:opacity-60 -z-10 h-[20rem] w-[35rem] rounded-[2rem] blur-[10rem] right-[50%]",
             bar_colors[0]
           )}
         ></div>
@@ -52,7 +52,7 @@ export default function ColorBar({ bar_colors }: ColorBarProps) {
           //   ease: "linear",
           // }}
           className={clsx(
-            "opacity-70 -z-12 h-[20rem] w-[35rem] rounded-[2rem] blur-[10rem] left-[50%]",
+            "opacity-70 dark:opacity-60 -z-12 h-[20rem] w-[35rem] rounded-[2rem] blur-[10rem] left-[50%]",
             bar_colors[2]
           )}
         ></div>

@@ -22,10 +22,10 @@ export default function Skills() {
     <section
       ref={ref}
       id="skills"
-      className="max-w-[53rem] mt-[35%] scroll-mt-14 sm:scroll-mt-28 text-center"
+      className="mt-[7rem] md:mt-[20rem] max-w-[50rem] scroll-mt-14 sm:scroll-mt-28 text-center"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 sm:text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <React.Fragment key={index}>
             <motion.li

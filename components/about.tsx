@@ -2,7 +2,6 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 import goldenGateImg from "@/public/goldengate.png";
@@ -12,14 +11,12 @@ export default function About() {
   const { ref } = useSectionInView("About", 0.2);
 
   return (
-    <motion.section
+    <section
       ref={ref}
-      className="mt-[35%] scroll-mt-14 sm:scroll-mt-28 max-w-[45rem] px-5 leading-8"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.17 }}
+      className="mt-[7rem] md:mt-0 scroll-mt-14 sm:scroll-mt-28 max-w-[45rem] px-5 leading-8"
       id="about"
     >
+      <div></div>
       <SectionHeading>About me</SectionHeading>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
         <p className="mb-3">
@@ -51,6 +48,6 @@ export default function About() {
           />
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
