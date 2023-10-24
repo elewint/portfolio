@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { HiMenu } from "react-icons/hi";
 import { VscChromeClose } from "react-icons/vsc";
-import { useViewport } from "@/lib/hooks";
+import useWindowWidth from "@/lib/window_hook";
 
 const navBarAnimationVariants = {
   initial: {
@@ -44,7 +44,7 @@ export default function Header() {
     useActiveSectionContext();
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const { width } = useViewport();
+  const { width } = useWindowWidth();
   const sm_breakpoint = 640;
   const small_screen = width < sm_breakpoint;
   const [justExpanded, setJustExpanded] = useState(true);

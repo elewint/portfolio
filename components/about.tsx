@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
-import placeholderImg from "@/public/placeholder1.png";
+import goldenGateImg from "@/public/goldengate.png";
 import gradImg from "@/public/graduation.png";
 
 export default function About() {
@@ -25,16 +25,17 @@ export default function About() {
         <p className="mb-3">
           I studied software engineering at Tufts University, where I graduated
           with a B.S. in Computer Science and Science, Technology, and Society
-          in May 2023. I'm currently working part-time as a Full-Stack Engineer
-          at Carmel Research Center, Inc.{" "}
+          in May 2023. Now I'm based in San Francisco, CA, where I work as a
+          part-time Full-Stack Engineer at Carmel Research Center, Inc. I am
+          always looking for new projects and opportunities.{" "}
           <span className="font-medium">
-            If you want to work together, feel free to reach out.
+            If you want to work on something together, feel free to reach out!
           </span>
         </p>
         <div className="w-[15rem] xs:w-[20rem] h-[25rem] flex-shrink-0">
           <Image
-            src={placeholderImg}
-            alt="placeholder"
+            src={goldenGateImg}
+            alt="Golden Gate Bridge"
             quality={95}
             width={150}
             height={150}
@@ -42,7 +43,7 @@ export default function About() {
           />
           <Image
             src={gradImg}
-            alt="placeholder 2"
+            alt="Graduation"
             quality={95}
             width={150}
             height={150}

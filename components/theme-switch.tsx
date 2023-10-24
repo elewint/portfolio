@@ -30,7 +30,7 @@ export default function ThemeSwitch() {
       variants={themeSwitchVariants}
       initial="initial"
       animate="animate"
-      className="fixed flex right-0 bottom-0"
+      className="fixed flex right-0 bottom-0 z-[1000]"
     >
       <motion.button
         onClick={toggleTheme}

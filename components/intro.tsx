@@ -164,7 +164,7 @@ export default function Intro() {
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
         </motion.div>
-        <div className="flex mt-2 gap-4 sm:mt-0 sm:gap-2">
+        <div className="flex mt-1 gap-3 sm:mt-0 sm:gap-2">
           <motion.a
             className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
             href="https://www.linkedin.com/in/eintri/"

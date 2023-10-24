@@ -1,5 +1,5 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { SectionName, bottomMargin } from "./types";
 
@@ -24,17 +24,4 @@ export function useSectionInView(
   return {
     ref,
   };
-}
-
-export function useViewport() {
-  const [width, setWidth] = useState(window?.innerWidth);
-
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
-
-  // Return the width so we can use it in our components
-  return { width };
 }
