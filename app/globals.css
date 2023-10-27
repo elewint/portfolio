@@ -6,6 +6,12 @@ html {
   --line-color: #e5e7eb;
 }
 
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 html.dark {
   --line-color: #334155;
 }
