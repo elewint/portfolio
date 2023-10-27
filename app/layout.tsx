@@ -35,7 +35,7 @@ export default function RootLayout({
             <Header />
             <Toaster position="top-right" />
             <ThemeSwitch />
-            <ColorBarManager />
+            {/* <ColorBarManager /> */}
             {/* This is where the content from app/page.tsx will be injected */}
             {children}
             <Footer />
