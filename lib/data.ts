@@ -3,8 +3,9 @@ import { BsFillCalendarCheckFill } from "react-icons/bs";
 import { MdLuggage, MdOutlineSensors } from "react-icons/md";
 import { RiSparkling2Fill } from "react-icons/ri";
 import corpcommentImg from "@/public/corpcomment.png";
+import gameImg from "@/public/game.jpg";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import turingCompressed from "@/public/turing_compressed.jpg";
 
 export const headerExperiencesData = [
   "full stack development 🥞",
@@ -91,7 +92,7 @@ export const projectsData = [
     description:
       "I led a team of 6 in building a 2D game in Unity. I developed the game's player movement, physics interactions, camera movement, and lighting effects.",
     tags: ["Unity", "C#"],
-    imageUrl: corpcommentImg,
+    imageUrl: gameImg,
   },
   {
     title: "Network Incident Alarm",
@@ -103,9 +104,9 @@ export const projectsData = [
   {
     title: "Image Compressor and Decompressor",
     description:
-      "I engineered an image compression program to reduce file size by 70%, and a decompressor to restore compressed images with minimal information loss.",
+      "I engineered an image compression program to reduce file size by 70%, and a decompressor to restore images with minimal information loss.",
     tags: ["C"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: turingCompressed,
   },
 ] as const;
 

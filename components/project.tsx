@@ -11,7 +11,6 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
-  bullets,
   tags,
   imageUrl,
 }: ProjectProps) {
