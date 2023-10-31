@@ -99,7 +99,7 @@ export default function Header() {
                   <li className="relative" key={link.hash}>
                     <Link
                       className={clsx(
-                        "flex items-center w-full px-3 hover:text-gray-950 transition-transform dark:text-slate-500 dark:hover:text-slate-300",
+                        "flex items-center w-full px-3 hover:text-gray-950 transition-transform dark:text-slate-500 dark:hover:text-slate-300 cursor-pointer",
                         {
                           "text-gray-950 dark:!text-[#f1f5f9]":
                             activeSection === link.name,

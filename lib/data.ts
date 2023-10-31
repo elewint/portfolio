@@ -2,10 +2,10 @@ import React from "react";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 import { MdLuggage, MdOutlineSensors } from "react-icons/md";
 import { RiSparkling2Fill } from "react-icons/ri";
-import corpcommentImg from "@/public/corpcomment.png";
 import gameImg from "@/public/game.jpg";
-import rmtdevImg from "@/public/rmtdev.png";
-import turingCompressed from "@/public/turing_compressed.jpg";
+import securityImg from "@/public/security_alarm.jpg";
+import turingCompressedImg from "@/public/turing_compressed.jpg";
+import sleepTrackerImg from "@/public/sleep_tracker.jpg";
 
 export const headerExperiencesData = [
   "full stack development 🥞",
@@ -85,7 +85,7 @@ export const projectsData = [
     description:
       "I developed a scalable RESTful API for a sleep tracker application to handle client requests to log sleep data, deliver reports, and analyze trends. I also implemented and containerized the CRUD database.",
     tags: ["Flask", "PostgreSQL", "Docker"],
-    imageUrl: corpcommentImg,
+    imageUrl: sleepTrackerImg,
   },
   {
     title: "Puzzle Platformer",
@@ -99,14 +99,14 @@ export const projectsData = [
     description:
       "I developed a real-time monitoring program to analyze network traffic and alert users about potentially malicious activity.",
     tags: ["Python"],
-    imageUrl: rmtdevImg,
+    imageUrl: securityImg,
   },
   {
     title: "Image Compressor and Decompressor",
     description:
       "I engineered an image compression program to reduce file size by 70%, and a decompressor to restore images with minimal information loss.",
     tags: ["C"],
-    imageUrl: turingCompressed,
+    imageUrl: turingCompressedImg,
   },
 ] as const;
 

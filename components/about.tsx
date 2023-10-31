@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
-import goldenGateImg from "@/public/goldengate.png";
+import goldenGateImg from "@/public/goldengate.jpg";
 import gradImg from "@/public/graduation.png";
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
     >
       <div></div>
       <SectionHeading>About me</SectionHeading>
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 sm:mr-4">
         <p className="mb-3">
           I studied software engineering at Tufts University, where I graduated
           with a B.S. in Computer Science and Science, Technology, and Society
@@ -29,14 +29,14 @@ export default function About() {
             If you want to work on something together, feel free to reach out!
           </span>
         </p>
-        <div className="w-[15rem] xs:w-[20rem] h-[25rem] flex-shrink-0">
+        <div className="w-[15rem] xs:w-[20rem] h-[25rem] flex-shrink-0 ml-auto mr-auto">
           <Image
             src={goldenGateImg}
             alt="Golden Gate Bridge"
             quality={95}
             width={150}
             height={150}
-            className="absolute w-[15rem] h-[15rem] xs:w-[20rem] xs:h-[20rem] rounded-t-lg shadow-xl"
+            className="absolute sm:-ml-4 w-[15rem] h-[15rem] sm:w-[20rem] sm:h-[20rem] rounded-lg shadow-xl"
           />
           <Image
             src={gradImg}
@@ -44,7 +44,7 @@ export default function About() {
             quality={95}
             width={150}
             height={150}
-            className="absolute object-cover object-right mx-[3.5rem] xs:mx-[5rem] mt-[7.5rem] w-[13rem] xs:w-[17rem] h-[13rem] xs:h-[17rem] rounded-t-lg shadow-xl"
+            className="absolute object-cover object-right mx-[3.5rem] xs:mx-[7rem] sm:mx-[6rem] mt-[6.5rem] w-[13rem] h-[13rem] sm:w-[16rem] sm:h-[16rem] rounded-lg shadow-xl"
           />
         </div>
       </div>

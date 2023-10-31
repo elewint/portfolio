@@ -24,11 +24,15 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
       <p className="text-gray-800 dark:text-slate-400">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
-        </a>{" "}
-        or use the form below.
+        Please contact me directly using the form below or{" "}
+        <a
+          href="https://www.linkedin.com/in/eintri/"
+          target="_blank"
+          className="underline cursor-pointer"
+        >
+          via LinkedIn
+        </a>
+        .
       </p>
       <form
         className="mt-10 flex flex-col dark:text-black"
