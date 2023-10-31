@@ -51,11 +51,14 @@ export default function Experience() {
               <p className="font-normal !mt-1 text-slate-600 dark:text-slate-300">
                 {item.location}
               </p>
-              <ul className="list-disc list-inside !mt-1 !font-normal text-slate-700 dark:text-slate-400">
+              <p className="!mt-1 !font-normal text-slate-700 dark:text-slate-400">
+                {item.description}
+              </p>
+              {/* <ul className="list-disc list-inside !mt-1 !font-normal text-slate-700 dark:text-slate-400">
                 {item.bullets.map((bullet, index) => (
                   <li key={index}>{bullet}</li>
                 ))}
-              </ul>
+              </ul> */}
               <ul className="flex flex-wrap !mt-4 gap-2 sm:mt-auto">
                 {item.tags.map((tag, index) => (
                   <li
