@@ -136,7 +136,7 @@ export default function Intro() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
           <motion.a
-            className="min-w-[15rem] sm:min-w-auto group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:hover:bg-white/20"
+            className="min-w-[15rem] sm:min-w-auto group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:!scale-110 hover:!bg-gray-950 active:scale-105 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:hover:!bg-white/20"
             href="/Eli Intriligator - Resume.pdf"
             download
             variants={fadeInVerticalVariants}
@@ -155,7 +155,7 @@ export default function Intro() {
           >
             <Link
               href="#contact"
-              className="min-w-[15rem] sm:min-w-0 group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-transform cursor-pointer borderBlack dark:bg-white/10"
+              className="min-w-[15rem] sm:min-w-0 group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:!scale-110 hover:!bg-gray-950 active:scale-105 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:hover:!bg-white/20"
               onClick={() => {
                 setActiveSection("Contact");
                 setTimeOfLastClick(Date.now());
@@ -167,7 +167,7 @@ export default function Intro() {
           </motion.div>
           <div className="flex mt-1 gap-3 sm:mt-0 sm:gap-2">
             <motion.a
-              className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
+              className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:!scale-[1.15] hover:!text-white hover:!bg-gray-950 active:scale-110 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:!bg-white/20 text-xl"
               href="https://www.linkedin.com/in/eintri/"
               target="_blank"
               variants={fadeInVerticalVariants}
@@ -178,7 +178,7 @@ export default function Intro() {
               <BsLinkedin />
             </motion.a>
             <motion.a
-              className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-110 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:bg-white/20 text-xl"
+              className="bg-slate-900 p-4 text-slate-100 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:!scale-[1.15] hover:!text-white hover:!bg-gray-950 active:scale-110 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80 dark:hover:!bg-white/20 text-xl"
               href="https://github.com/elewint"
               target="_blank"
               variants={fadeInVerticalVariants}
