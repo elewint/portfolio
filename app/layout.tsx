@@ -28,18 +28,6 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-slate-50 text-slate-950 relative dark:bg-slate-900 dark:text-slate-100 dark:text-opacity-90`}
       >
-        <div className="flex w-screen h-screen justify-center -z-[500] absolute opacity-50">
-          {/* <div className="w-[100vh] h-[100vh] absolute bg-gradient-to-r from-blue-300 via-orange-300 to-amber-200"></div> */}
-          <div className="w-[80vw] h-[100vh] absolute bg-gradient-to-r from-amber-200 via-blue-300 to-orange-300 from-15% via-50% to-80"></div>
-
-          <div className="w-[70rem] h-[100vh] z-[100] absolute bg-gradient-radial from-transparent via-transparent to-slate-50 dark:to-slate-900 from-0% via-0% to-55%  "></div>
-        </div>
-
-        {/* <div className="absolute h-[100vh] -z-[500] backdrop-blur-[8rem]">
-          <div className="bg-[#fbe2e3] top-[-6rem] right-[11rem] h-[39rem] rounded-full w-[68.75rem] dark:bg-[#946263]"></div>
-          <div className="bg-[#dbd7fb] top-[-1rem] h-[31.25rem] w-[70rem] rounded-full left-[-28rem] xl:left-[-15rem] dark:bg-[#676394]"></div>
-        </div> */}
-
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
