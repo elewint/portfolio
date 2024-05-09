@@ -137,7 +137,7 @@ export default function Intro() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
           <motion.a
             className="min-w-[15rem] sm:min-w-auto group bg-slate-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:!scale-110 hover:!bg-gray-950 active:scale-105 transition-transform cursor-pointer borderBlack dark:bg-white/10 dark:hover:!bg-white/20"
-            href="/Eli Intriligator - Resume.pdf"
+            href="/Eli-Intriligator-Resume.pdf"
             download
             variants={fadeInVerticalVariants}
             initial="initial"
