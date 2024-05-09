@@ -6,6 +6,7 @@ import gameImg from "@/public/game.jpg";
 import securityImg from "@/public/security_alarm.jpg";
 import turingCompressedImg from "@/public/turing_compressed.jpg";
 import sleepTrackerImg from "@/public/sleep_tracker.jpg";
+import { FaRocket } from "react-icons/fa";
 
 export const headerExperiencesData = [
   "full stack development 🥞",
@@ -42,28 +43,39 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full Stack Engineer for Tufts JumboCode",
+    title: "Web Engineer",
+    location: "Santa Monica, CA",
+    description:
+      "I built and launched a professional website for a space physics company, enabling researchers to share findings with 20+ collaborators and advertise services to industry clients.",
+    tags: ["WordPress", "HTML", "CSS"],
+    icon: React.createElement(FaRocket),
+    date: "Sep 2023 - Present",
+  },
+  {
+    title: "Full Stack Engineer at Tufts JumboCode",
     location: "Medford, MA",
     description:
-      "I collaborated with an Agile student team to build a web app for event management, display, and registration, connecting 1000+ families with community programs at the Bergen Family Center.",
-    tags: ["React", "Firebase", "CSS", "JavaScript", "Git"],
+      "I collaborated with an Agile team of 10 to develop and ship an event management web app for a human services nonprofit, connecting 1000+ families to vital community programs.",
+    tags: ["React", "JavaScript", "CSS", "Firebase", "Git", "Jira"],
     icon: React.createElement(BsFillCalendarCheckFill),
     date: "Sep 2021 - May 2022",
   },
   {
-    title: "Software Engineer for CS Dept. at Tufts University",
+    title:
+      "Software Engineering Intern in Computer Science Research Lab at Tufts University",
     location: "Medford, MA",
     description:
-      "I developed a VR prototype for visualizing high-volume datasets in Unity, a central feature of a $1M project sponsored by the Department of Defense.",
+      "I architected and developed 3 VR prototypes to test new techniques for high-dimensional data analysis – core deliverables for a $1M research project funded by the Department of Defense.",
     tags: ["Unity", "C#", "Git"],
     icon: React.createElement(RiSparkling2Fill),
     date: "Mar 2021 - Jan 2022",
   },
   {
-    title: "Software Engineer for Human Factors Lab at Tufts University",
+    title:
+      "Software Engineering Intern in Human Factors Research Lab at Tufts University",
     location: "Medford, MA",
     description:
-      "I engineered a cross-platform simulation of an airport baggage screening console to conduct a usability test and optimize the UX of airport screening, achieving a 20% reduction in baggage search time at major airports.",
+      "I helped drive a 20% reduction in TSA baggage search time at Logan Airport by building a bag screening simulator for usability testing, improving the travel experience for 17M passengers each year.",
     tags: ["Unity", "C#", "Git"],
     icon: React.createElement(MdLuggage),
     date: "Jun 2020 - Mar 2021",
@@ -72,8 +84,8 @@ export const experiencesData = [
     title: "Software Engineering Intern at Lexiwave Technology Ltd.",
     location: "Boston, MA",
     description:
-      "I developed an object-detection algorithm for new Infineon radar modules, improving fire safety and optimizing climate control systems in indoor shopping malls.",
-    tags: ["C"],
+      "I enhanced fire safety and climate control systems in 3 indoor shopping malls by designing and fine-tuning a presence-detection algorithm for new 24 GHz Doppler radar modules.",
+    tags: ["C", "Git"],
     icon: React.createElement(MdOutlineSensors),
     date: "May 2019 - Aug 2019",
   },
