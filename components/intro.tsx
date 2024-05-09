@@ -126,12 +126,12 @@ export default function Intro() {
         >
           <span>Right now, I&apos;m</span>{" "}
           <span className="font-medium underline">
-            seeking Full Stack Engineer roles.
+            seeking full-time Software Engineer roles.
             <div className="hidden sm:inline">
               <br />
             </div>
           </span>{" "}
-          <span>If you are hiring, please reach out below.</span>
+          <span>If you would like to chat, feel free to reach out below.</span>
         </motion.h1>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
