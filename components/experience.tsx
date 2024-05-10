@@ -30,7 +30,10 @@ export default function Experience() {
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border:
+                  theme === "light"
+                    ? "1px solid rgba(0, 0, 0, 0.05)"
+                    : "0.1rem solid rgba(255, 255, 255, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
@@ -71,7 +74,7 @@ export default function Experience() {
               <ul className="flex flex-wrap !mt-4 gap-2 sm:mt-auto">
                 {item.tags.map((tag, index) => (
                   <li
-                    className="bg-black/[0.7] px-3 py-1 text-[0.7rem] tracking-wider text-white rounded-full dark:text-white/70"
+                    className="bg-black/[0.7] dark:bg-[#112] px-3 py-1 text-[0.7rem] tracking-wider text-white rounded-full dark:text-white/70"
                     key={index}
                   >
                     {tag}
