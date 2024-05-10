@@ -45,6 +45,15 @@ export default function Experience() {
               iconStyle={{
                 background: theme === "light" ? "white" : "#1e293b",
                 fontSize: "1.5rem",
+                border:
+                  theme === "light"
+                    ? "1rem solid rgba(255, 255, 255, 1)"
+                    : "1rem solid rgba(0, 0, 0, 0.15)",
+                outline:
+                  theme === "light"
+                    ? "0.15rem solid #e5e7eb"
+                    : "0.15rem solid #364153",
+                boxShadow: "none",
               }}
             >
               <h3 className="font-semibold">{item.title}</h3>
