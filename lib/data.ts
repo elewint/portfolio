@@ -9,9 +9,9 @@ import sleepTrackerImg from "@/public/sleep_tracker.jpg";
 import { FaRocket } from "react-icons/fa";
 
 export const headerExperiencesData = [
-  "full stack development 🥞",
-  "visualization 📊",
-  "virtual reality 🥽",
+  "strong CS fundamentals 🧑‍💻",
+  "stellar attention to detail 🔍",
+  "a passion for problem-solving 🧩",
 ] as const;
 
 export const links = [

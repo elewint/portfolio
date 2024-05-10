@@ -85,7 +85,7 @@ export default function Intro() {
               }}
               className="inline-block"
             >
-              Hi, I&apos;m Eli.
+              Hi, I&apos;m Eli,
             </motion.span>{" "}
             <motion.div
               initial={{ opacity: 0 }}
@@ -96,10 +96,9 @@ export default function Intro() {
               }}
               className="inline"
             >
-              <span className="inline-block">I&apos;m a</span>{" "}
+              <span className="inline-block">a</span>{" "}
               <span className="inline">software engineer</span>{" "}
-              <span className="inline">with</span>{" "}
-              <span className="inline">experience in:</span>
+              <span className="inline">with:</span>
             </motion.div>
             <ul className="xs:mt-1 list-disc list-inside font-normal text-base xs:text-xl">
               {headerExperiencesData.map((experience, index) => (
