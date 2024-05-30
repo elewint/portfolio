@@ -43,7 +43,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full Stack Engineer",
+    title: "Full Stack Engineer at Carmel Research Center",
     location: "Santa Monica, CA",
     description:
       "I built and launched a professional website for a space physics company, enabling researchers to share findings with 20+ collaborators and advertise services to industry clients.",
