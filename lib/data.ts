@@ -43,7 +43,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web Engineer",
+    title: "Full Stack Engineer",
     location: "Santa Monica, CA",
     description:
       "I built and launched a professional website for a space physics company, enabling researchers to share findings with 20+ collaborators and advertise services to industry clients.",
@@ -141,6 +141,8 @@ export const skillsData = [
   "Flask",
   "RESTful API",
   "Agile Development",
+  "WordPress",
+  "Vite",
   "PostgreSQL",
   "Firebase",
   "Framer Motion",
